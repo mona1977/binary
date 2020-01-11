@@ -1,0 +1,15 @@
+{
+  "name": "insurance_calculator",
+  "description": "This is a car insurance calculator.",
+  "type": "project",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Utils\\": "utils/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  }
+}

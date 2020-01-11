@@ -1,0 +1,7 @@
+SELECT * FROM tbl_employees WHERE id = 1;
+
+SELECT t.title as type, l.title as language, i.text 
+FROM tbl_employee_info i 
+LEFT JOIN tbl_languages l ON l.id = i.language_id 
+LEFT JOIN tbl_info_type t ON t.id = i.info_type_id
+WHERE i.employee_id = 1;
