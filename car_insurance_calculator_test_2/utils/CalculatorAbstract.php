@@ -25,17 +25,23 @@ abstract class CalculatorAbstract
      * @param $number
      * @return float
      */
-    protected function nearestCeil($number)
+     protected function nearestCeil($number)
     {
-        $whole = floor($number);      // 1
-        $fraction = $number - $whole;
-        if($fraction > .50) {
-            $result = (float) $whole + 1;
-        } elseif($fraction <> 0) {
-            $result = (float) $whole + .50;
-        } else {
-            $result = $number;
-        }
+
+       // $whole = round($number);
+        
+//        $fraction = $number - $whole;
+  //      if($fraction > .50) {
+    //        $result = (float) $whole + 1;
+      //  } elseif($fraction <> 0) {
+        //    $result = (float) $whole + .50;
+//        } else {
+  //          $result = $number;
+    //    }
+    //Change logic
+    //Surendra Gupta
+    //Chnage logic to calculate nearest value
+    $result = round($number * 2) / 2
 
         return $result;
     }
